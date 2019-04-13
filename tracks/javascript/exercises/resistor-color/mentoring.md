@@ -64,3 +64,14 @@ export function colorCode(color) {
 They may not know of the _concept_ of `Array`. You may gently ask how experienced they are with programming. **Note**
 that there _are_ languages that do **not** have arrays. So them not knowing about it does not mean they don't have any
 experience.
+
+
+### Functional approach
+
+A more advanced student might be already familiar with a `for` loop and could be pushed a little, to think in a more declarative way.
+
+Example:
+
+```javascript
+export const colorCode = color => colors.reduce((acc, el) => `${acc}${COLORS.indexOf(el)}`, '')
+```
